@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
+	type="text/javascript"></script>
+<script type="text/javascript"
+	src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+<!-- <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>-->
+
+<script src="js/custom.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+
+<script type="text/javascript"> 
+	$(document).ready(function(){  
+		alertJs();
+    });
+</script>        
+
+<body>
+	<div class="demo" class="ui-droppable">
+		<div class="draggable ui-widget-content ui-draggable"
+			style="position: relative;">
+			<p>Drag me to a target</p>
+		</div>
+		<div class="draggable ui-widget-content ui-draggable"
+			style="position: relative;">
+			<p>Drag me to a target</p>
+		</div>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<div class="droppable ui-widget-header ui-droppable">
+			<p>Drop here</p>
+		</div>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<div class="droppable2 ui-widget-header ui-droppable2">
+			<p>Do not drop here</p>
+		</div>
+	</div>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+	<div class="file_chooser">
+	<!-- <input type="submit" value="File chooser" id="btnSubmit" onclick="sayHello();" > -->
+		<input type="file" name="banner_image" id="banner_image" onChange="loadImage(this);" accept="image/*" />
+		<br />
+		<img alt="" id="image" src=""  width="200px" height="200px" style="display: none" onclick="showSrc(this.src);">
+		<br/> 
+		<div id="divImage" class="divImage ui-droppable"></div>
+	</div>
+</body>
+</html>
